@@ -1,0 +1,76 @@
+body{
+  background-color: #000;
+}
+.calculadora {
+  max-width: 300px;
+  margin: 90px auto;
+  padding: 10px;
+  text-align: center;
+  border: 5px solid;
+  animation: calculadora 3s infinite;
+  -webkit-animation: calculadora 3s infinite;
+  background-color: #fff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.calculadora input[type="text"] {
+  width: 100%;
+  margin:10px 1px 15px 1px;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.calculadora .botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.calculadora button {
+  margin: 2px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.calculadora button:hover{
+  background-color:grey;
+}
+label{
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: Tahoma, sans-serif;
+}
+.buttonClear{
+  width: 420%;
+}
+
+@keyframes calculadora {
+  0% {
+    border-color: rgb(255, 10, 10);
+  }
+  50% {
+    border-color: rgb(255, 0, 179);
+  }
+  100% {
+    border-color: rgb(226, 230, 9);
+  }
+}
+
